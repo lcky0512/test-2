@@ -1,0 +1,86 @@
+@font-face {
+    font-family: digital;
+    src: url(/fonts/);
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6e6; /* Light pink background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 650px; /* Set the height of the mobile */
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+  }
+  
+  .stopwatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff; /* White background for the stopwatch */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    font-family: digital;
+  }
+  
+  .time-row {
+    font-family: 'Technology', sans-serif; /* Change the font family */
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #333; /* Dark gray text color */
+  }
+  
+  #controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Green button color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  #darkModeBtn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  #darkModeBtn:hover {
+    background-color: #555;
+  }
+  
+  /* Additional styles for dark mode */
+  body.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  button.dark-mode {
+    background-color: #555;
+  }
+  
